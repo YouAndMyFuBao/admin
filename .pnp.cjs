@@ -36,6 +36,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/eslint-plugin", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:7.0.2"],\
           ["@typescript-eslint/parser", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:7.0.2"],\
           ["axios", "npm:1.6.8"],\
+          ["cookies-next", "npm:4.1.1"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-next", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:14.1.0"],\
           ["eslint-config-prettier", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:9.1.0"],\
@@ -642,6 +643,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/cookie", [\
+      ["npm:0.6.0", {\
+        "packageLocation": "../.yarn/berry/cache/@types-cookie-npm-0.6.0-1f4c3f48f0-10c0.zip/node_modules/@types/cookie/",\
+        "packageDependencies": [\
+          ["@types/cookie", "npm:0.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/json-schema", [\
       ["npm:7.0.15", {\
         "packageLocation": "../.yarn/berry/cache/@types-json-schema-npm-7.0.15-fd16381786-10c0.zip/node_modules/@types/json-schema/",\
@@ -661,6 +671,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
+      ["npm:16.18.96", {\
+        "packageLocation": "../.yarn/berry/cache/@types-node-npm-16.18.96-43ecb971a5-10c0.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:16.18.96"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:20.11.19", {\
         "packageLocation": "../.yarn/berry/cache/@types-node-npm-20.11.19-5d4958999b-10c0.zip/node_modules/@types/node/",\
         "packageDependencies": [\
@@ -1078,6 +1095,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/eslint-plugin", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:7.0.2"],\
           ["@typescript-eslint/parser", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:7.0.2"],\
           ["axios", "npm:1.6.8"],\
+          ["cookies-next", "npm:4.1.1"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-next", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:14.1.0"],\
           ["eslint-config-prettier", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:9.1.0"],\
@@ -1535,6 +1553,27 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../.yarn/berry/cache/convert-source-map-npm-1.9.0-e294555f4b-10c0.zip/node_modules/convert-source-map/",\
         "packageDependencies": [\
           ["convert-source-map", "npm:1.9.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cookie", [\
+      ["npm:0.6.0", {\
+        "packageLocation": "../.yarn/berry/cache/cookie-npm-0.6.0-362d6a2e45-10c0.zip/node_modules/cookie/",\
+        "packageDependencies": [\
+          ["cookie", "npm:0.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cookies-next", [\
+      ["npm:4.1.1", {\
+        "packageLocation": "../.yarn/berry/cache/cookies-next-npm-4.1.1-59f12e0396-10c0.zip/node_modules/cookies-next/",\
+        "packageDependencies": [\
+          ["cookies-next", "npm:4.1.1"],\
+          ["@types/cookie", "npm:0.6.0"],\
+          ["@types/node", "npm:16.18.96"],\
+          ["cookie", "npm:0.6.0"]\
         ],\
         "linkType": "HARD"\
       }]\
