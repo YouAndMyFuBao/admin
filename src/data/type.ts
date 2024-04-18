@@ -18,3 +18,10 @@ export interface Inquire {
   date: string;
 }
 
+export interface Mission {
+  date: string;
+  content: string;
+  message: string;
+  constructor: string;
+  openStatus: string;
+}
