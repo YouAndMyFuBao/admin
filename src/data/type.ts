@@ -6,6 +6,15 @@ export interface APIResponse<T> {
 }
 
 export interface Login {
-    id: string;
-    password: string;
+  id: string;
+  password: string;
 }
+
+export interface Inquire {
+  title: string;
+  content: string;
+  email: string;
+  name: string;
+  date: string;
+}
+

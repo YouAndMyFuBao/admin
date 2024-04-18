@@ -1,24 +1,8 @@
+import useEnquiryData from '@/hook/useEnquireData';
 import { css } from '@emotion/react';
 
-interface Inquire {
-  title: string;
-  content: string;
-  email: string;
-  name: string;
-  date: string;
-}
-
-const inQuireDummy: Inquire[] = [
-  {
-    title: 'hi',
-    content: 'hihi',
-    email: 'dsk08208@gmail.com',
-    name: 'peter',
-    date: '2024:02:24:13:36:58',
-  },
-];
-
 export default function InquireTable() {
+  const { data } = useEnquiryData();
   return (
     <table css={WrapperStyle}>
       <thead>
@@ -31,7 +15,7 @@ export default function InquireTable() {
         </tr>
       </thead>
       <tbody>
-        {inQuireDummy.map((inquire, index) => (
+        {data?.map((inquire, index) => (
           <tr key={index}>
             <td css={TableContentStyle}>{inquire.title}</td>
             <td css={TableContentStyle}>{inquire.content}</td>
