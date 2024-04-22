@@ -1,9 +1,18 @@
 import { deleteMission } from '@/api/deleteMission';
 import useMissionData from '@/hook/useMissionData';
+import { useEditMission } from '@/store/useEditStore';
 import { css } from '@emotion/react';
+import { useRouter } from 'next/router';
 
 export default function DailyTable() {
+  const router = useRouter();
   const { data } = useMissionData();
+  const { setEditMissionId } = useEditMission();
+
+  const handleEdit = (missionId: number) => {
+    setEditMissionId(missionId);
+    router.push(`/edit`);
+  };
 
   const handleDelete = async (missionId: number) => {
     await deleteMission(missionId);
@@ -31,7 +40,9 @@ export default function DailyTable() {
             <td css={TableContentStyle}>{mission.constructor}</td>
             <td css={TableContentStyle}>{mission.openStatus}</td>
             <td css={TableContentStyle}>
-              <button css={ButtonStyle}>수정</button>
+              <button css={ButtonStyle} onClick={() => handleEdit(mission.id)}>
+                수정
+              </button>
               <button css={ButtonStyle} onClick={() => handleDelete(mission.id)}>
                 삭제
               </button>
