@@ -1,8 +1,15 @@
+import { deleteMission } from '@/api/deleteMission';
 import useMissionData from '@/hook/useMissionData';
 import { css } from '@emotion/react';
 
 export default function DailyTable() {
   const { data } = useMissionData();
+
+  const handleDelete = async (missionId: number) => {
+    await deleteMission(missionId);
+    window.location.reload();
+  };
+
   return (
     <table css={WrapperStyle}>
       <thead>
@@ -25,7 +32,9 @@ export default function DailyTable() {
             <td css={TableContentStyle}>{mission.openStatus}</td>
             <td css={TableContentStyle}>
               <button css={ButtonStyle}>수정</button>
-              <button css={ButtonStyle}>삭제</button>
+              <button css={ButtonStyle} onClick={() => handleDelete(mission.id)}>
+                삭제
+              </button>
             </td>
           </tr>
         ))}

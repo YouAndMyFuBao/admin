@@ -19,6 +19,7 @@ export interface Inquire {
 }
 
 export interface Mission {
+  id: number;
   date: string;
   content: string;
   message: string;
