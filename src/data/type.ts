@@ -26,3 +26,8 @@ export interface Mission {
   constructor: string;
   openStatus: string;
 }
+
+export interface PostMission {
+  content: string;
+  answer: string;
+}
