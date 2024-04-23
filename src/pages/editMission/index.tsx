@@ -4,7 +4,7 @@ import useMissionData from '@/hook/useMissionData';
 import { useEditMission } from '@/store/useEditStore';
 import { css } from '@emotion/react';
 
-const EditPage = () => {
+const EditMissionPage = () => {
   const { data } = useMissionData();
   const { editMissionId } = useEditMission();
 
@@ -14,13 +14,13 @@ const EditPage = () => {
     <div css={WrapperStyle}>
       <Navigation />
       <div css={PageStyle}>
-        {filterEditMissionData && <DailyEditor filterEditMissionData={filterEditMissionData} />}
+        {filterEditMissionData && <DailyEditor data={filterEditMissionData} type='edit'/>}
       </div>
     </div>
   );
 };
 
-export default EditPage;
+export default EditMissionPage;
 
 const WrapperStyle = css({
   width: '100vw',
