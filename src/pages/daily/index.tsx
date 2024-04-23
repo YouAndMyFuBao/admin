@@ -1,15 +1,26 @@
-
 import { DailyTable } from '@/components/daily-table';
 import { Navigation } from '@/components/navigation';
+import { SearchBar } from '@/components/search-bar';
 import { css } from '@emotion/react';
+import { useRouter } from 'next/router';
 
 const DailyPage = () => {
+  const router = useRouter();
   return (
     <div css={WrapperStyle}>
       <Navigation />
       <div css={PageStyle}>
-        <p style={{fontSize: '20px', fontWeight: '600', margin: '20px 0px'}}>데일리 미션</p>
-        <div></div>
+        <div style={{ display: 'flex' }}>
+          <p style={{ fontSize: '20px', fontWeight: '600', margin: '20px 0px' }}>데일리 미션</p>
+          <button
+            onClick={() => {
+              router.push('/addMission');
+            }}
+          >
+            추가
+          </button>
+        </div>
+        <SearchBar />
         <DailyTable />
       </div>
     </div>
@@ -22,14 +33,10 @@ const WrapperStyle = css({
   width: '100vw',
   height: '100vh',
   display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
 });
 
 const PageStyle = css({
-  width: '100%',
   display: 'flex',
   flexDirection: 'column',
-  // alignItems: 'center',
   padding: '0px 20px',
-}); 
+});
