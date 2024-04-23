@@ -1,20 +1,40 @@
 import { useState } from 'react';
+import { postMission } from '@/api/postMission';
 import { Mission } from '@/data/type';
+import useMissionData from '@/hook/useMissionData';
 import { css } from '@emotion/react';
+import { useRouter } from 'next/router';
 import { Input } from '../input';
 
 interface DailyEditorProps {
-  filterEditMissionData: Mission;
+  data?: Mission | null;
+  type: 'add' | 'edit';
 }
 
-export default function DailyEditor({ filterEditMissionData }: DailyEditorProps) {
-  const { date, content, message, constructor, openStatus } = filterEditMissionData;
+export default function DailyEditor({ data: propData, type }: DailyEditorProps) {
+  const router = useRouter();
+  const { data: missionData } = useMissionData();
 
-  const [dateState, setDate] = useState(date);
-  const [contentState, setContent] = useState(content);
-  const [messageState, setMessage] = useState(message);
-  const [constructorState, setConstructor] = useState(constructor);
-  const [openStatusState, setOpenStatus] = useState(openStatus);
+  const initialDataId = missionData?.length ? missionData.length + 1 : 1;
+
+  const initialData: Mission = {
+    id: initialDataId,
+    date: '',
+    content: '',
+    message: '',
+    constructor: '',
+    openStatus: '',
+  };
+
+  const [dateState, setDate] = useState(propData ? propData.date : initialData.date);
+  const [contentState, setContent] = useState(propData ? propData.content : initialData.content);
+  const [messageState, setMessage] = useState(propData ? propData.message : initialData.message);
+  const [constructorState, setConstructor] = useState(
+    propData ? propData.constructor : initialData.constructor,
+  );
+  const [openStatusState, setOpenStatus] = useState(
+    propData ? propData.openStatus : initialData.openStatus,
+  );
 
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setDate(e.target.value);
@@ -62,11 +82,18 @@ export default function DailyEditor({ filterEditMissionData }: DailyEditorProps)
         css={ButtonStyle}
         // TO DO : 수정하기 API 연결
         onClick={() => {
-          console.log('수정하기');
-          alert('수정하기 완료!');
+          if (type === 'add') {
+            postMission({
+              content: contentState,
+              answer: messageState,
+            });
+            router.push('/daily');
+          } else {
+            console.log('수정하기 API');
+          }
         }}
       >
-        수정하기
+        {type === 'add' ? '추가하기' : '수정하기'}
       </button>
     </>
   );
