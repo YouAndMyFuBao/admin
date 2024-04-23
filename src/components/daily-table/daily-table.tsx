@@ -1,23 +1,34 @@
 import { deleteMission } from '@/api/deleteMission';
+import { useFilterMissions } from '@/hook/useFilterMissions';
 import useMissionData from '@/hook/useMissionData';
 import { useEditMission } from '@/store/useEditStore';
+import { useSelectAllStore } from '@/store/useSelectAllStore';
 import { css } from '@emotion/react';
 import { useRouter } from 'next/router';
 
 export default function DailyTable() {
   const router = useRouter();
   const { data } = useMissionData();
+  const { filteredMissions } = useFilterMissions();
+  const { selectedAll } = useSelectAllStore();
   const { setEditMissionId } = useEditMission();
 
+  // 수정하기
   const handleEdit = (missionId: number) => {
     setEditMissionId(missionId);
-    router.push(`/edit`);
+    router.push(`/editMission`);
   };
 
+  // 삭제하기
   const handleDelete = async (missionId: number) => {
     await deleteMission(missionId);
     window.location.reload();
   };
+
+  // 데이터
+  const missions = selectedAll ? data : filteredMissions;
+  console.log(missions);
+  console.log(selectedAll);
 
   return (
     <table css={WrapperStyle}>
@@ -32,7 +43,7 @@ export default function DailyTable() {
         </tr>
       </thead>
       <tbody>
-        {data?.map((mission, index) => (
+        {missions?.map((mission, index) => (
           <tr key={index}>
             <td css={TableContentStyle}>{mission.date}</td>
             <td css={TableContentStyle}>{mission.content}</td>
@@ -55,7 +66,11 @@ export default function DailyTable() {
 }
 
 const WrapperStyle = css({
-  width: '100%',
+  width: '1100px',
+  height: '100%',
+  margin: '0 auto',
+  marginTop: '20px',
+  border: '1px solid #ccc',
   borderRadius: '10px',
   boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
   borderCollapse: 'collapse',
@@ -68,6 +83,7 @@ const TableTitleStyle = css({
   fontSize: '18px',
   textAlign: 'center',
   padding: '10px',
+  borderRadius: '10px',
   borderBottom: '1px solid #ccc',
 });
 
@@ -76,6 +92,7 @@ const TableContentStyle = css({
   fontSize: '14px',
   textAlign: 'center',
   padding: '20px',
+  borderRadius: '10px',
   borderBottom: '1px solid #D3D3D3',
 });
 
