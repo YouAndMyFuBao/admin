@@ -9,7 +9,8 @@ type NavigationType = {
 
 const NavigationList: NavigationType[] = [
   { id: 0, name: '데일리 미션', path: '/daily' },
-  { id: 1, name: '닉네임 규정', path: '/nickname' },
+  // TO DO : 닉네임 규정 페이지 추가
+  { id: 1, name: '닉네임 규정', path: '/daily' },
   { id: 2, name: '문의', path: '/inquire' },
 ];
 
