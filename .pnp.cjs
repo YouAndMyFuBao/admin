@@ -34,12 +34,10 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.2.57"],\
           ["@types/react-datepicker", "npm:6.2.0"],\
           ["@types/react-dom", "npm:18.2.19"],\
-          ["@types/uikit", "npm:3.14.5"],\
           ["@typescript-eslint/eslint-plugin", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:7.0.2"],\
           ["@typescript-eslint/parser", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:7.0.2"],\
           ["axios", "npm:1.6.8"],\
           ["cookies-next", "npm:4.1.1"],\
-          ["date-fns", "npm:3.6.0"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-next", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:14.1.0"],\
           ["eslint-config-prettier", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:9.1.0"],\
@@ -50,11 +48,9 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:14.1.0"],\
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
-          ["react-date-range", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:2.0.1"],\
           ["react-datepicker", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:6.9.0"],\
           ["react-dom", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:18.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["uikit", "npm:3.19.4"],\
           ["zustand", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:4.5.2"]\
         ],\
         "linkType": "SOFT"\
@@ -888,15 +884,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@types/uikit", [\
-      ["npm:3.14.5", {\
-        "packageLocation": "../.yarn/berry/cache/@types-uikit-npm-3.14.5-41223a776b-10c0.zip/node_modules/@types/uikit/",\
-        "packageDependencies": [\
-          ["@types/uikit", "npm:3.14.5"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@typescript-eslint/eslint-plugin", [\
       ["npm:7.0.2", {\
         "packageLocation": "../.yarn/berry/cache/@typescript-eslint-eslint-plugin-npm-7.0.2-565c53c25f-10c0.zip/node_modules/@typescript-eslint/eslint-plugin/",\
@@ -1245,12 +1232,10 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.2.57"],\
           ["@types/react-datepicker", "npm:6.2.0"],\
           ["@types/react-dom", "npm:18.2.19"],\
-          ["@types/uikit", "npm:3.14.5"],\
           ["@typescript-eslint/eslint-plugin", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:7.0.2"],\
           ["@typescript-eslint/parser", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:7.0.2"],\
           ["axios", "npm:1.6.8"],\
           ["cookies-next", "npm:4.1.1"],\
-          ["date-fns", "npm:3.6.0"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-next", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:14.1.0"],\
           ["eslint-config-prettier", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:9.1.0"],\
@@ -1261,11 +1246,9 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:14.1.0"],\
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
-          ["react-date-range", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:2.0.1"],\
           ["react-datepicker", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:6.9.0"],\
           ["react-dom", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:18.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["uikit", "npm:3.19.4"],\
           ["zustand", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:4.5.2"]\
         ],\
         "linkType": "SOFT"\
@@ -1641,15 +1624,6 @@ const RAW_RUNTIME_STATE =
           ["chalk", "npm:4.1.2"],\
           ["ansi-styles", "npm:4.3.0"],\
           ["supports-color", "npm:7.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["classnames", [\
-      ["npm:2.5.1", {\
-        "packageLocation": "../.yarn/berry/cache/classnames-npm-2.5.1-c7273f3423-10c0.zip/node_modules/classnames/",\
-        "packageDependencies": [\
-          ["classnames", "npm:2.5.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4161,36 +4135,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["react-date-range", [\
-      ["npm:2.0.1", {\
-        "packageLocation": "../.yarn/berry/cache/react-date-range-npm-2.0.1-c7d518db08-10c0.zip/node_modules/react-date-range/",\
-        "packageDependencies": [\
-          ["react-date-range", "npm:2.0.1"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:2.0.1", {\
-        "packageLocation": "./.yarn/__virtual__/react-date-range-virtual-bdec6d950c/2/.yarn/berry/cache/react-date-range-npm-2.0.1-c7d518db08-10c0.zip/node_modules/react-date-range/",\
-        "packageDependencies": [\
-          ["react-date-range", "virtual:7f0f7e8da996c6611fedc2eefcfbfbb5bbcfc606eeb73b9ab6c24d9bc872ef307681a74dfe14e363f41c7441fb3a075cca0714dd0d46f39b526685692269b78e#npm:2.0.1"],\
-          ["@types/date-fns", null],\
-          ["@types/react", "npm:18.2.57"],\
-          ["classnames", "npm:2.5.1"],\
-          ["date-fns", "npm:3.6.0"],\
-          ["prop-types", "npm:15.8.1"],\
-          ["react", "npm:18.2.0"],\
-          ["react-list", "virtual:bdec6d950c6849d55fb9f7f0bfa9feb4ee072bdd453a194c5470b4364180965490dcb5a47a9e5ca5702758ad3e1ffa201e58f07b38623c30d682b2bde4b15178#npm:0.8.17"],\
-          ["shallow-equal", "npm:1.2.1"]\
-        ],\
-        "packagePeers": [\
-          "@types/date-fns",\
-          "@types/react",\
-          "date-fns",\
-          "react"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["react-datepicker", [\
       ["npm:6.9.0", {\
         "packageLocation": "../.yarn/berry/cache/react-datepicker-npm-6.9.0-6ab6046c52-10c0.zip/node_modules/react-datepicker/",\
@@ -4251,29 +4195,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../.yarn/berry/cache/react-is-npm-16.13.1-a9b9382b4f-10c0.zip/node_modules/react-is/",\
         "packageDependencies": [\
           ["react-is", "npm:16.13.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["react-list", [\
-      ["npm:0.8.17", {\
-        "packageLocation": "../.yarn/berry/cache/react-list-npm-0.8.17-e7731be11d-10c0.zip/node_modules/react-list/",\
-        "packageDependencies": [\
-          ["react-list", "npm:0.8.17"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:bdec6d950c6849d55fb9f7f0bfa9feb4ee072bdd453a194c5470b4364180965490dcb5a47a9e5ca5702758ad3e1ffa201e58f07b38623c30d682b2bde4b15178#npm:0.8.17", {\
-        "packageLocation": "./.yarn/__virtual__/react-list-virtual-c55a1035cf/2/.yarn/berry/cache/react-list-npm-0.8.17-e7731be11d-10c0.zip/node_modules/react-list/",\
-        "packageDependencies": [\
-          ["react-list", "virtual:bdec6d950c6849d55fb9f7f0bfa9feb4ee072bdd453a194c5470b4364180965490dcb5a47a9e5ca5702758ad3e1ffa201e58f07b38623c30d682b2bde4b15178#npm:0.8.17"],\
-          ["@types/react", "npm:18.2.57"],\
-          ["prop-types", "npm:15.8.1"],\
-          ["react", "npm:18.2.0"]\
-        ],\
-        "packagePeers": [\
-          "@types/react",\
-          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4486,15 +4407,6 @@ const RAW_RUNTIME_STATE =
           ["define-data-property", "npm:1.1.4"],\
           ["functions-have-names", "npm:1.2.3"],\
           ["has-property-descriptors", "npm:1.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["shallow-equal", [\
-      ["npm:1.2.1", {\
-        "packageLocation": "../.yarn/berry/cache/shallow-equal-npm-1.2.1-518a76643b-10c0.zip/node_modules/shallow-equal/",\
-        "packageDependencies": [\
-          ["shallow-equal", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4934,15 +4846,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../.yarn/berry/cache/typescript-patch-4778c7998b-10c0.zip/node_modules/typescript/",\
         "packageDependencies": [\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["uikit", [\
-      ["npm:3.19.4", {\
-        "packageLocation": "../.yarn/berry/cache/uikit-npm-3.19.4-14215bd02e-10c0.zip/node_modules/uikit/",\
-        "packageDependencies": [\
-          ["uikit", "npm:3.19.4"]\
         ],\
         "linkType": "HARD"\
       }]\
